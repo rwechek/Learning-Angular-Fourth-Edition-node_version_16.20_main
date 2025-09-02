@@ -21,7 +21,7 @@ Keyboard</li>
 <app-product-detail
 	*ngIf="selectedProduct; else noProduct"
 	[product]="selectedProduct"
-	(bought)="onBuy($event)">
+	(bought)="onBuy()">
 </app-product-detail>
 
 <ng-template #noProduct>

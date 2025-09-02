@@ -35,7 +35,7 @@ ngAfterViewInit(): void {
   }
 }
 
-onBuy(name: string){
+onBuy(){
   window.alert(`You just bought ${this.selectedProduct?.name}!`);
 }
 
