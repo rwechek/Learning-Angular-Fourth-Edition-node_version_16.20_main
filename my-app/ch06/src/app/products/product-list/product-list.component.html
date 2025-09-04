@@ -1,8 +1,8 @@
 <h2>Product List</h2>
 <ul>
-    <li *ngFor="let product of products | sort" (click)="selectedProduct =
+    <li *ngFor="let product of products | sort; let i = index" (click)="selectedProduct =
 product">
-{{product.name}}
+<app-product-view [id]="i"></app-product-view>
     </li>
 </ul>
 <app-product-detail
@@ -14,3 +14,5 @@ product">
 <ng-template #noProduct>
 	<p>No product selected!</p>
 </ng-template>
+<h2>Favorites</h2>
+<app-favorites></app-favorites>
