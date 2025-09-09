@@ -5,7 +5,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SortPipe } from './sort.pipe';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ProductViewComponent } from './product-view/product-view.component';
-
+import { ProductViewService } from './product-view/product-view.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { ProductViewComponent } from './product-view/product-view.component';
   ],
   exports: [
     ProductListComponent
-  ]
+  ],
+  providers: [ProductViewService],
 })
 export class ProductsModule { }

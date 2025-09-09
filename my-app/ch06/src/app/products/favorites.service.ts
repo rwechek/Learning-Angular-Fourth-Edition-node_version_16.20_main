@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProductsService } from './products.service';
 import { Product } from './product';
+import { ProductViewService } from './product-view/product-view.service';
 
 
 @Injectable({
@@ -8,8 +9,8 @@ import { Product } from './product';
 })
 export class FavoritesService extends ProductsService {
 
-  constructor() {
-    super() 
+  constructor(private productViewService: ProductViewService) {
+    super(); 
   }
 
   override getProducts(): Product[] {

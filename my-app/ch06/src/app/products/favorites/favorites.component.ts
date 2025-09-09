@@ -10,6 +10,7 @@ import { ProductViewService } from '../product-view/product-view.service';
   templateUrl: './favorites.component.html',
   styleUrls: ['./favorites.component.css'],
   //providers: [{ provide: ProductsService, useClass: FavoritesService }]
+  //providers: [{ provide: ProductsService, useFactory: favoritesFactory(true)}],
   providers: [{ provide: ProductsService, useFactory: favoritesFactory(true), deps: [ProductViewService] }],
 })
 export class FavoritesComponent implements OnInit {
