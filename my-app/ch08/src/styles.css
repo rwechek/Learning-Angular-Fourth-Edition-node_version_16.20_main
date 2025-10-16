@@ -8,7 +8,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-div  {
+div {
   padding: 0 16px;
 }
 
@@ -20,7 +20,8 @@ h2 {
   font-size: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: lighter;
 }
 
@@ -32,7 +33,8 @@ li {
   cursor: pointer;
 }
 
-.button, button {
+.button,
+button {
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
@@ -40,7 +42,8 @@ li {
   border: none;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
   opacity: 0.8;
   font-weight: normal;
 }
@@ -57,4 +60,19 @@ li {
 
 .invalid {
   border-bottom: solid red;
+}
+
+input {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
 }

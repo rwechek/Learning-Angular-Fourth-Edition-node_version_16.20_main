@@ -33,6 +33,19 @@ export class ProductsService {
       .pipe(map((product) => this.convertToProduct(product)));
   }
 
+  addProduct(name: string, price: number): Observable<Product> {
+    return this.http
+      .post<ProductDTO>(this.productsUrl, {
+        title: name,
+        price: price,
+      })
+      .pipe(map((product) => this.convertToProduct(product)));
+  }
+
+  updateProduct(id: number, price: number): Observable<void> {
+    return this.http.patch<void>(`${this.productsUrl}/${id}`, { price });
+  }
+
   private convertToProduct(product: ProductDTO): Product {
     return {
       id: product.id,

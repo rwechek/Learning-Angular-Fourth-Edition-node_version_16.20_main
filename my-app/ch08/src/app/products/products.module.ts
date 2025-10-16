@@ -5,13 +5,15 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SortPipe } from './sort.pipe';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductViewService } from './product-view/product-view.service';
+import { ProductCreateComponent } from './product-create/product-create.component';
 
 @NgModule({
   declarations: [
     ProductListComponent,
     ProductDetailComponent,
     SortPipe,
-    ProductViewComponent
+    ProductViewComponent,
+    ProductCreateComponent
   ],
   imports: [
     CommonModule
